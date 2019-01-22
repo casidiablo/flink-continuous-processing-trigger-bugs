@@ -1,0 +1,17 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  implementation 'org.apache.flink:flink-streaming-java_2.12:1.7.1'
+  implementation 'org.slf4j:slf4j-log4j12:1.8.0-beta2'
+  testImplementation 'junit:junit:4.12'
+}
+
+// Define the main class for the application
+mainClassName = 'flink.bug.App'
